@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.causeway.com)",
+      "Read(//Users/miguelmarques/Desktop/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

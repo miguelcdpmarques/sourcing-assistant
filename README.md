@@ -49,17 +49,26 @@ sourcing-agent/
    - `company-info.md` - Target company information
    - `job-info.md` - Job description and requirements
 
-2. **Run the orchestrator**:
+2. **Launch Claude Code**:
    ```bash
-   # Using Claude Code CLI
+   # Navigate to the project directory
+   cd sourcing-agent
+
+   # Start Claude Code CLI
    claude-code
    ```
 
-3. **Invoke the orchestrator agent**:
-   In the Claude Code interface, type:
+3. **Run the orchestrator**:
+   In the Claude Code interface, simply type:
    ```
-   /orchestrator
+   run the orchestrator
    ```
+
+   Claude Code will automatically:
+   - Invoke the **research-agent** to analyze candidate/company/job data
+   - Pass insights to the **recruiter-message-writer** to draft 3 messages
+   - Send each draft through the **recruiter-redactor** for polishing
+   - Save the final messages to the `output/` folder
 
 4. **Check the output**: Generated messages will be saved in the `output/` folder as:
    - `message-1.md`

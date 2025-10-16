@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:www.causeway.com)",
-      "Read(//Users/miguelmarques/Desktop/**)"
+      "Read(//Users/miguelmarques/Desktop/**)",
+      "WebFetch(domain:causeway-1588594217.teamtailor.com)",
+      "WebFetch(domain:www.linkedin.com)"
     ],
     "deny": [],
     "ask": []
